@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Data List -->
+    <!-- its similar to dropdown list but rear used in development -->
+    <label for="country"> Data List: </label>
+    <input list="list_country" id="country" />
+
+    <datalist id="list_country">
+      <option value="Ind" />
+      <option value="USA" />
+      <option value="russia" />
+      <option value="spain" />
+    </datalist>
+
+    <!-- Output tag -->
+    <h4>Output tag Example</h4>
+    <form onclick="sum.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="number" id="a" value="55" /> +
+      <input type="number" id="b" value="5" /> =
+      <output name="sum"></output>
+    </form>
+    <br /><br />
+    <form oninput="sum.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="number" id="a" value="55" /> +
+      <input type="number" id="b" value="5" /> =
+      <output name="sum"></output>
+    </form>
+    <br /><br />
+    <form onchange="sum.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="number" id="a" value="55" /> +
+      <input type="number" id="b" value="5" /> =
+      <output name="sum" id="a b"></output>
+    </form>
+  </body>
+</html>

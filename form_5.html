@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form with validate and novalidate attribute-->
+    <form action="./demo-text.html" validate>
+      <!-- input tag with autocomplete -->
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" autocomplete="on" />
+      <br /><br />
+
+      <!-- input type tel  require -->
+      <label for="telephone">Telephone:</label>
+      <input type="tel" id="telephone" required />
+      <br /><br />
+
+      <!-- input type email with validate attribute in form  -->
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" />
+      <br /><br />
+
+      <!-- input type with  focus -->
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" autofocus />
+      <br /><br />
+
+      <!-- input type time -->
+      <label for="appointment">Select Time:</label>
+      <input type="time" id="appointment" />
+      <br /><br />
+
+      <!-- input type color -->
+      <label for="fav_color">Select Color:</label>
+      <input type="color" id="fav_color" />
+      <br /><br />
+
+      <!-- input type URL its used to send url like git repo or linkedIn url -->
+      <label for="profile_url">Add URL:</label>
+      <input type="url" id="profile_url" />
+      <br /><br />
+
+      <!-- input type file by default its add only one file like resume-->
+      <label for="resume">Add file:</label>
+      <input type="file" id="resume" />
+      <br /><br />
+
+      <!-- to add multiple files like images use multiple attribute -->
+      <label for="images">Add multiple files:</label>
+      <input type="file" id="images" multiple />
+      <br /><br />
+
+      <button>submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG&Embed</title>
+  </head>
+  <body>
+    <h2>html graphics</h2>
+    <svg>
+      <circle cx="50px" cy="50px" r="50px" />
+    </svg>
+    <svg>
+      <ellipse cx="80px" cy="50px" rx="70px" ry="40px" />
+    </svg>
+
+    <svg>
+      <rect height="50px" width="100px" />
+    </svg>
+    <canvas height="100px" width="200px" style="border: solid black"></canvas>
+
+    <audio controls autoplay loop>
+      <source src="music&video/trap.mp3" type="audio/mpeg" />
+    </audio>
+    <video controls autoplay loop muted style="height: 200px; width: 200px">
+      <source src="music&video/piano.mp4" type="video/mp4" />
+      <track
+        kind="captions"
+        srclang="eng"
+        label="English-sub"
+        default
+        src="./Assets/vid/subtitle.vtt"
+      />
+    </video>
+    <!-- embed -->
+    <embed
+      src="https://static.vecteezy.com/system/resources/previews/003/660/834/non_2x/happy-smile-emoticon-expression-free-vector.jpg"
+      type="image/jpg"
+      width="100px"
+    />
+    <embed src="demo-text.html" type="text/html" height="100px" />
+    <embed
+      src="music&video/piano.mp4"
+      type="video/mp4"
+      height="200px"
+      width="200px"
+    />
+  </body>
+</html>
